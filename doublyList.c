@@ -32,7 +32,22 @@ doublyList_t* makedoublyList(){
     newList->size = 0;
     return newList;
 }
-
+int searchElement(doublyList_t* dlist, int element){
+    if(dlist->head == NULL){
+        printf("Cannot search empty doubly linked list.\n");
+        return 0;
+    }
+    int pos = 1;
+    node_t* itr = dlist->head;
+    while(itr != NULL){
+        if(itr->data == element){
+            return pos;
+        }
+        itr = itr->next;
+        pos++;
+    }
+    return -1;
+}
 int insertMiddle(doublyList_t* dlist, int element, int position){
     if(position > (dlist->size) + 1){
         printf("position out of range.\n");
@@ -181,5 +196,9 @@ int main(){
     printf("Insert at the Middle of doubly linked list.\n");
     insertMiddle(dlist, 53, 3);   
     printNode(dlist->head);   
+    int pos = searchElement(dlist, 53);
+    printf("Search (53) element at position: %d\n", pos);
+    int pos1 = searchElement(dlist, 1);
+    printf("Search (1) element at position: %d\n", pos1);   
 }
 

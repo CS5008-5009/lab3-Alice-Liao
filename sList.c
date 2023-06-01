@@ -174,7 +174,9 @@ int main(){
     insertMiddle(slist, 19, 3);
     printNode(slist->head);
     int pos = searchElement(slist, 99);
-    printf("search element's postion: %d\n", pos);
+    printf("search (99)element's postion: %d\n", pos);
+    int pos1 = searchElement(slist, 19);
+    printf("search (19)element's postion: %d\n", pos1);
     printf("Insert 7 at position 3.\n");
     insertMiddle(slist, 7, 3);
     printNode(slist->head);
