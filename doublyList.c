@@ -147,6 +147,20 @@ int deleteFront(doublyList_t* dlist){
     freeNode(temp);
     return 1;
 }
+void printReverseOrder(doublyList_t* dlist){
+    node_t* temp = dlist->head;
+    while(temp->next != NULL){
+        temp = temp->next;
+    }
+    while(temp != NULL){
+        printf("%d", temp->data);
+        if (temp->prev != NULL){
+            printf(",");
+        }
+        temp = temp->prev;
+    }
+    printf("\n");
+}
 
 int deleteEnd(doublyList_t* dlist){
     if(dlist->head == NULL){
@@ -199,6 +213,8 @@ int main(){
     int pos = searchElement(dlist, 53);
     printf("Search (53) element at position: %d\n", pos);
     int pos1 = searchElement(dlist, 1);
-    printf("Search (1) element at position: %d\n", pos1);   
+    printf("Search (1) element at position: %d\n", pos1);
+    printf("Print in reversed order:\n");
+    printReverseOrder(dlist);
 }
 
