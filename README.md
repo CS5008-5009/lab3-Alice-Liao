@@ -95,5 +95,6 @@ Original linked list : 23 <--> 52 <--> 19 <--> 9 <--> 100
 Output - 100, 9, 19, 52, 23
 
 <img width="625" alt="Screen Shot 2023-06-01 at 12 29 59 PM" src="https://github.com/CS5008-5009/lab3-Alice-Liao/assets/111921900/8555d37c-836b-463a-bae4-a035ef080cf1">
-<img width="639" alt="Screen Shot 2023-06-01 at 12 30 26 PM" src="https://github.com/CS5008-5009/lab3-Alice-Liao/assets/111921900/22b872c7-16b7-4c79-b62a-90a08615ab57">
+
+<img width="608" alt="Screen Shot 2023-06-08 at 2 01 26 PM" src="https://github.com/CS5008-5009/lab3-Alice-Liao/assets/111921900/8120dfd0-bfef-48df-b8c1-c86a25b19d0b">
 
